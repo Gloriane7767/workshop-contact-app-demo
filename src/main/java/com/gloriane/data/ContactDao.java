@@ -7,8 +7,8 @@ import com.gloriane.model.Contact;
 import java.util.List;
 
 public interface ContactDao {
-    List<Contact> findAll();
-    void save(Contact contact) ;
-    Contact findByName(String name);
+    List<Contact> findAll() throws ContactStorageException;
+    void save(Contact contact) throws ContactStorageException, DuplicateContactException;
+    Contact findByName(String name) throws ContactStorageException;
 }
 
