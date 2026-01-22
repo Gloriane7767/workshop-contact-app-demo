@@ -5,12 +5,9 @@ import com.gloriane.data.ContactDao;
 import com.gloriane.data.FileContactDaoImpl;
 import com.gloriane.exception.ContactStorageException;
 import com.gloriane.exception.DuplicateContactException;
-import com.gloriane.model.Contact;
 import com.gloriane.view.ContactView;
 
-import java.util.List;
-
-public class Main {
+public class ContactApp {
     public static void main(String[] args) throws DuplicateContactException, ContactStorageException {
 
         // Initialize the Data Layer (DAO)
